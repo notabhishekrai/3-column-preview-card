@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;300;400;500;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@300;400;500;600;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.5rem;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container {
+  width: 70%;
+  margin: auto;
+}
+
+#main {
+  position: relative;
+  display: flex;
+  width: Min(calc(370 * 3px), 80%);
+  margin-inline: auto;
+}
+
+#sedans {
+  background-color: #e38826;
+}
+
+#suvs {
+  background-color: #006970;
+}
+
+#luxury {
+  background-color: #004241;
+}
+
+.card {
+  color: #f2f2f2;
+  padding: 6rem 0;
+  flex-basis: 370px;
+}
+
+.card .container {
+  font-family: "Lexend Deca";
+}
+
+.card .container figure {
+  margin-bottom: 2.8rem;
+}
+
+.card .container h2 {
+  margin-bottom: 2.8rem;
+  color: #f2f2f2;
+  font-size: 3.8rem;
+  font-size: 600;
+  font-family: "Big Shoulders Display";
+}
+
+.card .container p {
+  margin-bottom: 10rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.card .container .btn {
+  text-decoration: none;
+  color: #f2f2f2;
+  border: 2px solid rgba(255, 255, 255, 0.75);
+  padding: 0.8em 2em;
+  border-radius: 2.2rem;
+  background-color: #f2f2f2;
+}
+
+.card .container .btn:hover {
+  cursor: pointer;
+  background-color: transparent;
+  color: #f2f2f2 !important;
+}
+
+#sedans-btn {
+  color: #e38826;
+}
+
+#suvs-btn {
+  color: #006970;
+}
+
+#luxury-btn {
+  color: #004241;
+}
+
+@media all and (max-width: 900px) {
+  #main {
+    flex-wrap: wrap;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+  }
+}
+/*# sourceMappingURL=index.css.map */

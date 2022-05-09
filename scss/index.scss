@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;300;400;500;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@300;400;500;600;700;900&display=swap");
+
+$bright-orange: hsl(31%, 77%, 52%);
+$dark-cyan: hsl(184, 100%, 22%);
+$very-dark-cyan: hsl(179, 100%, 13%);
+$transparent-white: hsla(0, 0%, 100%, 0.75);
+$very-light-gray: hsl(0, 0%, 95%);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.5rem;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container {
+  width: 70%;
+  margin: auto;
+}
+
+#main {
+  position: relative;
+  display: flex;
+  width: Min(calc(370 * 3px), 80%);
+  margin-inline: auto;
+}
+
+#sedans {
+  background-color: $bright-orange;
+}
+#suvs {
+  background-color: $dark-cyan;
+}
+#luxury {
+  background-color: $very-dark-cyan;
+}
+
+.card {
+  color: $very-light-gray;
+  padding: 6rem 0;
+  flex-basis: 370px;
+
+  .container {
+    font-family: "Lexend Deca";
+    figure {
+      margin-bottom: 2.8rem;
+    }
+    h2 {
+      margin-bottom: 2.8rem;
+      color: $very-light-gray;
+      font-size: 3.8rem;
+      font-size: 600;
+      font-family: "Big Shoulders Display";
+    }
+
+    p {
+      margin-bottom: 10rem;
+      line-height: 1.7;
+      color: $transparent-white;
+    }
+
+    .btn {
+      text-decoration: none;
+      color: $very-light-gray;
+      border: 2px solid $transparent-white;
+      padding: 0.8em 2em;
+      border-radius: 2.2rem;
+      background-color: $very-light-gray;
+
+      &:hover {
+        cursor: pointer;
+        background-color: transparent;
+        color: $very-light-gray !important;
+      }
+    }
+  }
+}
+
+#sedans-btn {
+  color: $bright-orange;
+}
+#suvs-btn {
+  color: $dark-cyan;
+}
+#luxury-btn {
+  color: $very-dark-cyan;
+}
+
+@media all and (max-width: 900px) {
+  #main {
+    flex-wrap: wrap;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+  }
+}
